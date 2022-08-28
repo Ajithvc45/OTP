@@ -1,0 +1,9 @@
+<div class="container">
+    <form #userlogin="ngForm" (ngSubmit)="Verify()">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Enter OTP</label>
+          <input type="email" class="form-control" id="exampleInputOtp" aria-describedby="emailHelp" name="otp" [(ngModel)]="User.otp" #otp="ngModel"  placeholder="Enter OTP">
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>

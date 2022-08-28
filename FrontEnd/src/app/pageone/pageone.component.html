@@ -1,8 +1,8 @@
 <div class="container">
-<form>
+<form (ngSubmit)="onsubmit()">
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" #email="ngModel" [(ngModel)]="User.email" placeholder="Enter email">
     </div><br>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
